@@ -12,4 +12,9 @@ var director1 = {
     fullTimeEmployee: true,
     numberOfReports: 17
 };
+;
+var printTeacher = function (firstName, lastName) {
+    return "".concat(firstName.charAt(0), ". ").concat(lastName);
+};
 console.log(director1);
+console.log(printTeacher(teacher3.firstName, teacher3.lastName));
