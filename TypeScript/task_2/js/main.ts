@@ -55,5 +55,15 @@ function executeWork(employee: Teacher | Director): void {
 
     }
 };
-executeWork(createEmployee(200));
-executeWork(createEmployee(1000));
+
+type subjects = 'Math' | 'History'
+
+function teachClass(todayClass: subjects): void {
+    if(todayClass === 'Math') {
+        console.log('Teaching Math');
+    } else if(todayClass === 'History') {
+        console.log('Teaching History');
+    }
+}
+teachClass('Math');
+teachClass('History');

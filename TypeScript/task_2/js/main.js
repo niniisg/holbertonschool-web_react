@@ -50,5 +50,13 @@ function executeWork(employee) {
     }
 }
 ;
-executeWork(createEmployee(200));
-executeWork(createEmployee(1000));
+function teachClass(todayClass) {
+    if (todayClass === 'Math') {
+        console.log('Teaching Math');
+    }
+    else if (todayClass === 'History') {
+        console.log('Teaching History');
+    }
+}
+teachClass('Math');
+teachClass('History');
