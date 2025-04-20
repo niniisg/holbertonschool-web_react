@@ -1,14 +1,7 @@
-#count {
+#body {
     display: inline;
     font-weight: bold;
     margin-left: 10px;
   }
   
-  button {
-    padding: 10px;
-    margin: 10px;
-    background-color: #6ab8e4;
-    border: 1px solid #0c4792;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+ 
