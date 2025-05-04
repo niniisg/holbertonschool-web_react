@@ -2,12 +2,15 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-describe('App component', () => {
-  test('renders the main heading', () => {
-    const { container } = render(<App />);
-    const heading = screen.getByRole('heading', { level: 1, name: /school dashboard/i });
-    expect(heading).toBeInTheDocument();
+describe('App Component', () => {
+  test('renders the header, body, and footer', () => {
+    const { container } = render(<App />); // If unused, prefix with an underscore
+    // const { _container } = render(<App />); // Uncomment this line if you want to keep it unused
+    expect(container.querySelector('.App-header')).toBeInTheDocument();
+    expect(container.querySelector('.App-body')).toBeInTheDocument();
+    expect(container.querySelector('.App-footer')).toBeInTheDocument();
   });
+});
 
 
   test('renders the login and footer paragraphs', () => {
@@ -23,4 +26,3 @@ describe('App component', () => {
     const image = screen.getByAltText(/holberton logo/i);
     expect(image).toBeInTheDocument();
   });
-});
