@@ -1,4 +1,4 @@
-# React Fundamentals Project with Vite
+# React intro
 
 ## 📚 Resources
 
