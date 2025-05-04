@@ -1,23 +1,21 @@
-import React from 'react';
-import './App.css';
-import holbertonLogo from './assets/holberton-logo.jpg';
+import React from "react";
+import "./App.css";
+import holberton_logo from "./holberton_logo.jpg";
 
 function App() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <div className="App">
+    <>
       <div className="App-header">
-        <img src={holbertonLogo} alt="holberton logo" />
-        <h1 style={{ color: '#e1003c' }}>School dashboard</h1>
+        <img src={holberton_logo} />
+        <h1>School dashboard</h1>
       </div>
       <div className="App-body">
         <p>Login to access the full dashboard</p>
       </div>
       <div className="App-footer">
-        <p>Copyright {currentYear} - Holberton School</p>
+        <p>Copyright 2020 - holberton School</p>
       </div>
-    </div>
+    </>
   );
 }
 
