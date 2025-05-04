@@ -5,7 +5,7 @@ describe('App Component', () => {
   test('renders 2 input elements', () => {
     render(<App />);
     const inputs = screen.getAllByRole('textbox'); // Finds input elements
-    expect(inputs.length).toBe(1); // Email input is a textbox
+    expect(inputs).toHaveLength(1); // Email input is a textbox
     const passwordInput = screen.getByLabelText(/password/i); // Finds password input
     expect(passwordInput).toBeInTheDocument();
   });
